@@ -140,3 +140,20 @@ new Chart(ctx2, {
 });
 // ///////////////////////////
 
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    // تشغيل عداد الأرقام
+    new PureCounter();
+
+    // كود الـ Chart الأول
+    const ctx = document.getElementById('myChart');
+    if(ctx) {
+        new Chart(ctx, { /* الإعدادات بتاعتك هنا */ });
+    }
+
+    // كود الـ Chart الثاني
+    const ctx2 = document.getElementById('myChart2');
+    if(ctx2) {
+        new Chart(ctx2, { /* الإعدادات بتاعتك هنا */ });
+    }
+});

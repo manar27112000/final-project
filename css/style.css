@@ -110,8 +110,6 @@ transform: translate(-50%, -50%) scale(1);
 .three-images {
   position: relative;
 }
-#rounded-images{
-}
 
 #rounded-images:hover{
 
@@ -475,7 +473,46 @@ transform: rotateY(360deg);}
 
 }
 
-/* /*******************************contact us**************************************************** */
+
+.Testimonials{
+  background-image: url('../assets/images/testimonial-bg.jpg');
+}
+
+
+.c-1{width: 33%;}
+
+/* تنسيق الكارت */
+.testimonial-card {
+    border-radius: 15px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.smaller {
+    font-size: 12px;
+}
+
+.testimonial-card img {
+    object-fit: cover;
+}
+
+.stars {
+    font-size: 14px;
+}
+.bg-hover:hover{
+  background-color: #007bff;
+  color: white !important;
+}
+.bg-hover:hover .fa-quote-right{
+    color: white !important;
+}
+
+/* /*
+******************************contact us**************************************************** */
 body{
   background-color: #FBFBFB;
 }
