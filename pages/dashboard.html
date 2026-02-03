@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Pharmacy Details</title>
+</head>
+
+<body>
+
+    <!-- ----------nav bar----------- -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white  m-auto fixed-top position-relative ">
+        <div class="container  ">
+            <!-- Logo -->
+            <a class="navbar-brand me-5" href="#">
+                <img src="../assets/images/logo.svg" alt="">
+            </a>
+            <!-- ----------------------------- -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- --------------links------------ -->
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+
+                <ul class="navbar-nav align-items-lg-center  justify-content-between">
+                    <li class="nav-item dropdown me-4 position-static">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Home
+                        </a>
+                        <div class="display-with-hover ">
+                            <ul class="dropdown-menu  w-100  ">
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="../assets/images/doctor-grid-01.jpg" class="card-img-top">
+                                            <div class="card-body text-center">
+                                                <a href="#">home 1</a>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="../assets/images/doctor-grid-01.jpg" class="card-img-top">
+                                            <div class="card-body text-center">
+                                                <a href="#">home 1</a>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="../assets/images/doctor-grid-01.jpg" class="card-img-top"
+                                                alt="...">
+                                            <div class="card-body text-center">
+                                                <a href="#">home 1</a>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown me-4 position-static">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Doctors
+                        </a>
+                        <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-4 position-static">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Patients
+                        </a>
+                        <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-4 position-static">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            pharmacy
+                        </a>
+                        <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-4 position-static">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            pages
+                        </a>
+                        <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-4 position-static">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-4 position-static">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Admin
+                        </a>
+                        <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- ------------buttons------------- -->
+                <div class="d-flex gap-2 ms-auto align-items-center">
+                    <a href="#" class="btn btn-primary py-2 d-none d-lg-inline-flex ">
+                        <i class="fa-solid fa-lock"></i> Sign Up
+                    </a>
+                    <a href="#" class="btn btn-outline-dark py-2 d-none d-lg-inline-flex">
+                        <i class="fa-solid fa-user-check"></i> Register
+                    </a>
+                    <i class="fa-solid fa-ellipsis border rounded-circle p-2 ms-2 d-lg-none"></i>
+                </div>
+
+
+            </div>
+
+            <i class="fa-solid fa-ellipsis  border rounded-circle  p-2  ms-2 d-none d-lg-block"></i>
+
+
+        </div>
+    </nav>
+    <!-- --------------------Dashboard-------------------------------------------------------- -->
+    <section class="page-title text-center py-3 ">
+        <div class="container">
+            <p class="fw-medium">
+                <i class="fa-solid fa-house-chimney-window text-primary"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+                Doctor
+                <i class="fa-solid fa-chevron-right"></i> Dashboard
+            </p>
+            <h2 class="fw-bold mt-2">Dashboard</h2>
+        </div>
+    </section>
+
+    <section class="container d-flex align-items-start ">
+        <div class=" shadow-box side-bar-dash text-center border rounded text-muted mb-3 me-4">
+            <div class="bg-side   text-center  mb-3">
+                <img src="../assets/images/doctor-grid-01.jpg" alt="" class="rounded-circle ">
+            </div>
+            <h5 class="text-black">Dr Edalin Hendry</h5>
+            <p>BDS, MDS - Oral & Maxillofacial Surgery</p>
+            <button type="button" class="btn btn-outline-secondary"><span class="text-primary">•</span> Dentist</button>
+            <div class="availability text-start mx-4 my-4">
+                <h6>Availability <span class="text-danger">*</span> </h6>
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary
+                     dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar mt-5">
+                    <div class="sidebar-item active">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Dashboard</span>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="fa-solid fa-file-invoice"></i>
+                        <span>Requests</span>
+                        <span class="badge">2</span>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        <span>Appointments</span>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Available Timings</span>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>My Patients</span>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="fa-solid fa-stethoscope"></i>
+                        <span>Specialties & Services</span>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="fa-regular fa-star"></i>
+                        <span>Reviews</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Available Timings</span>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>My Patients</span>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="fa-solid fa-stethoscope"></i>
+                        <span>Specialties & Services</span>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="fa-regular fa-star"></i>
+                        <span>Reviews</span>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+        <div class="main-content mt-5 ">
+            <section class="appointments-and-patient  d-flex align-items-stretch">
+                <main class="patient ">
+                    <div
+                        class="mb-2 shadow-box d-flex align-items-center justify-content-between border rounded text-muted p-3">
+                        <div>
+                            <p class="text-black">Total Patient</p>
+                            <h5 class="h5">978</h5>
+                            <p class="text-success"><i class="fa-solid fa-arrow-up fw-medium"></i>15% From Last Week</p>
+
+
+                        </div>
+                        <div><i class="fa-solid fa-user-doctor fs-4 fw-medium"></i></div>
+                    </div>
+
+                    <div
+                        class="mb-2 shadow-box d-flex align-items-center justify-content-between border rounded text-muted p-3">
+                        <div>
+                            <p class="text-black">Total Patient</p>
+                            <h5 class="h5">978</h5>
+                            <p class="text-danger"><i class="fa-solid fa-arrow-up fw-medium"></i>15% From Last Week</p>
+
+
+                        </div>
+                        <div><i class="fa-solid fa-user-doctor fs-4 fw-medium"></i></div>
+                    </div>
+                    <div
+                        class="mb-2 shadow-box d-flex align-items-center justify-content-between border rounded text-muted p-3">
+                        <div>
+                            <p class="text-black">Total Patient</p>
+                            <h5 class="h5">978</h5>
+                            <p class="text-success"><i class="fa-solid fa-arrow-up fw-medium"></i>15% From Last Week</p>
+
+
+                        </div>
+                        <div><i class="fa-solid fa-user-doctor fs-4 fw-medium"></i></div>
+                    </div>
+                </main>
+                <main class="appointments shadow-box border rounded ms-4 p-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h5 class="fw-medium">Appointment</h5>
+                        <select class="form-select w-auto">
+                            <option>Today</option>
+                            <option>This month</option>
+                            <option>Last 7 Days</option>
+                        </select>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="d-flex align-items-center justify-content-between  py-2">
+                        <div class="d-flex align-items-center">
+                            <img src="../assets/images/doctor-thumb-23.jpg" class="rounded-3 me-3" width="60"
+                                height="60" style="object-fit: cover;">
+                            <div>
+                                <small class="text-primary fw-bold">#Apt0001</small>
+                                <h6 class="mb-0 fw-bold">Adrian Marshall</h6>
+                            </div>
+                        </div>
+
+                        <div class="text-start">
+                            <p class="mb-1 fw-medium">11 Nov 2024 <span class="text-muted fw-normal">10:45 AM</span></p>
+                            <span class=" bg-primary text-white px-3 rounded">General</span>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-success rounded-circle p-1 fw-bold">
+                                <i class="fa-solid fa-check"></i> </button>
+                            <button class="btn btn-outline-danger rounded-circle p-1 fw-bold ">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between  py-2">
+                        <div class="d-flex align-items-center">
+                            <img src="../assets/images/doctor-thumb-23.jpg" class="rounded-3 me-3" width="60"
+                                height="60" style="object-fit: cover;">
+                            <div>
+                                <small class="text-primary fw-bold">#Apt0001</small>
+                                <h6 class="mb-0 fw-bold">Adrian Marshall</h6>
+                            </div>
+                        </div>
+
+                        <div class="text-start">
+                            <p class="mb-1 fw-medium">11 Nov 2024 <span class="text-muted fw-normal">10:45 AM</span></p>
+                            <span class=" bg-primary text-white px-3 rounded">General</span>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-success rounded-circle p-1 fw-bold">
+                                <i class="fa-solid fa-check"></i> </button>
+                            <button class="btn btn-outline-danger rounded-circle p-1 fw-bold ">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between  py-2">
+                        <div class="d-flex align-items-center">
+                            <img src="../assets/images/doctor-thumb-23.jpg" class="rounded-3 me-3" width="60"
+                                height="60" style="object-fit: cover;">
+                            <div>
+                                <small class="text-primary fw-bold">#Apt0001</small>
+                                <h6 class="mb-0 fw-bold">Adrian Marshall</h6>
+                            </div>
+                        </div>
+
+                        <div class="text-start">
+                            <p class="mb-1 fw-medium">11 Nov 2024 <span class="text-muted fw-normal">10:45 AM</span></p>
+                            <span class=" bg-primary text-white px-3 rounded">General</span>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-success rounded-circle p-1 fw-bold">
+                                <i class="fa-solid fa-check"></i> </button>
+                            <button class="btn btn-outline-danger rounded-circle p-1 fw-bold ">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between  py-2">
+                        <div class="d-flex align-items-center">
+                            <img src="../assets/images/doctor-thumb-23.jpg" class="rounded-3 me-3" width="60"
+                                height="60" style="object-fit: cover;">
+                            <div>
+                                <small class="text-primary fw-bold">#Apt0001</small>
+                                <h6 class="mb-0 fw-bold">Adrian Marshall</h6>
+                            </div>
+                        </div>
+
+                        <div class="text-start">
+                            <p class="mb-1 fw-medium">11 Nov 2024 <span class="text-muted fw-normal">10:45 AM</span></p>
+                            <span class=" bg-primary text-white px-3 rounded">General</span>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-success rounded-circle p-1 fw-bold">
+                                <i class="fa-solid fa-check"></i> </button>
+                            <button class="btn btn-outline-danger rounded-circle p-1 fw-bold ">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between  py-2">
+                        <div class="d-flex align-items-center">
+                            <img src="../assets/images/doctor-thumb-23.jpg" class="rounded-3 me-3" width="60"
+                                height="60" style="object-fit: cover;">
+                            <div>
+                                <small class="text-primary fw-bold">#Apt0001</small>
+                                <h6 class="mb-0 fw-bold">Adrian Marshall</h6>
+                            </div>
+                        </div>
+
+                        <div class="text-start">
+                            <p class="mb-1 fw-medium">11 Nov 2024 <span class="text-muted fw-normal">10:45 AM</span></p>
+                            <span class=" bg-primary text-white px-3 rounded">General</span>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-success rounded-circle p-1 fw-bold">
+                                <i class="fa-solid fa-check"></i> </button>
+                            <button class="btn btn-outline-danger rounded-circle p-1 fw-bold ">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                        </div>
+                    </div>
+                </main>
+
+            </section>
+
+            <section class="weekly-and-upcomming d-flex ">
+
+                <div class="left-column  ">
+                    <div class=" shadow-box border py-3 my-3 px-4 rounded">
+                        <div class="d-flex justify-content-between">
+                            <h5>Weekly Overview</h5>
+                            <h6>Mar 14 - Mar 21</h6>
+                        </div>
+
+                        <div class="chart ">
+                            <ul class="nav nav-underline d-flex flex-nowrap  text-center">
+                                <li class="nav-item ">
+                                    <a class="nav-link active" href="#" data-tab="Revenue">Revenue</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#" data-tab="Appointments">Appointments</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tabs Content -->
+                            <div class="tabs-content">
+                                <div class="tab-content active" id="Revenue">
+                                    <div class="chart-height">
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-content" id="Appointments">
+
+                                    <div class="chart-height">
+                                        <canvas id="myChart2"></canvas>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class=" shadow-box border py-3 my-3 px-4 rounded">
+                        <div class="d-flex justify-content-between">
+                            <h5>Recent Patients</h5>
+                            <a href="#">View All</a>
+
+                        </div>
+                        <hr>
+                        <div class="recent-patients d-flex ">
+                            <div class="card-1 bg-light p-2 w-50 rounded">
+                                <div>
+                                    <img src="../assets/images/doctor-thumb-22.jpg" alt="" class="rounded  ">
+
+                                </div>
+                                <p class="fw-bold m-0 pt-2">Adrian Marshall</p>
+                                <p class="text-primary">Patient ID : P0001</p>
+
+                                <hr>
+
+                                <p class="fw-medium">Last Appointment 15 Mar 2024</p>
+                            </div>
+                            <div class="card-1 bg-light p-2 w-50 rounded">
+                                <div>
+                                    <img src="../assets/images/doctor-thumb-22.jpg" alt="" class="rounded  ">
+
+                                </div>
+                                <p class="fw-bold m-0 pt-2">Adrian Marshall</p>
+                                <p class="text-primary">Patient ID : P0001</p>
+
+                                <hr>
+
+                                <p class="fw-medium">Last Appointment 15 Mar 2024</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div class="upcoming-appointment text-white 
+                    py-3 my-2 px-2 ms-3 rounded">
+                        <h5 class="mb-3">upcoming appointment </h5>
+                        <div class="d-flex align-items-center  p-2 rounded " style="gap: 15px;">
+                            <img src="../assets/images/doctor-grid-01.jpg" alt="" style="width: 60px; height: 60px; 
+                                object-fit: cover; border-radius: 8px;">
+
+                            <div class="flex-grow-1">
+                                <p class="m-0 fw-bold" style="font-size: 14px;">#Apt0001</p>
+                                <p class="m-0 fw-bold">Adrian Marshall</p>
+                            </div>
+
+                            <div class="text-end">
+                                <p class="m-0 w-semibold " style="font-size: 12px;">General visit</p>
+                                <p class="m-0 fw-semibold" style="font-size: 12px;">Today, 10:45 AM</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center ">
+                                <i class="fa-solid fa-video"></i>
+                                <p class="ms-2">video appointment</p>
+                            </div>
+                            <div class="d-flex">
+                                <button type="button" class="btn btn-outline-dark rounded-pill me-2">
+                                    chat now</button>
+                                <button type="button" class="btn btn-outline-dark rounded-pill">
+                                    start appointment</button>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="Recent-invoices  
+                     py-3 my-3 px-2 ms-3 rounded shadow-box">
+                        <div class="d-flex justify-content-between">
+                            <h5>Recent Invoices</h5>
+                            <a href="#">View All</a>
+
+                        </div>
+                        <hr>
+                        <div class="">
+                            <div class="d-flex align-items-center  p-2 rounded " style="gap: 15px;">
+                                <img src="../assets/images/doctor-grid-01.jpg" alt="" style="width: 60px; height: 60px; 
+                                object-fit: cover; border-radius: 8px;">
+
+                                <div class="flex-grow-1">
+                                    <p class="m-0 fw-bold" style="font-size: 14px;">#Apt0001</p>
+                                    <p class="m-0 fw-bold">Adrian Marshall</p>
+                                </div>
+                                <div>
+                                    <p class="m-0">amount</p>
+                                    <p class="m-0">$450</p>
+                                </div>
+                                <div>
+                                    <p class="m-0">amount</p>
+                                    <p class="m-0">$450</p>
+                                </div>
+
+                                <div>
+                                    <i class="fa-solid fa-eye bg-secondary-subtle p-2  rounded-circle "></i>
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="d-flex align-items-center  p-2 rounded " style="gap: 15px;">
+                                <img src="../assets/images/doctor-grid-01.jpg" alt="" style="width: 60px; height: 60px; 
+                                object-fit: cover; border-radius: 8px;">
+
+                                <div class="flex-grow-1">
+                                    <p class="m-0 fw-bold" style="font-size: 14px;">#Apt0001</p>
+                                    <p class="m-0 fw-bold">Adrian Marshall</p>
+                                </div>
+                                <div>
+                                    <p class="m-0">amount</p>
+                                    <p class="m-0">$450</p>
+                                </div>
+                                <div>
+                                    <p class="m-0">amount</p>
+                                    <p class="m-0">$450</p>
+                                </div>
+
+                                <div>
+                                    <i class="fa-solid fa-eye bg-secondary-subtle p-2  rounded-circle "></i>
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="d-flex align-items-center  p-2 rounded " style="gap: 15px;">
+                                <img src="../assets/images/doctor-grid-01.jpg" alt="" style="width: 60px; height: 60px; 
+                                object-fit: cover; border-radius: 8px;">
+
+                                <div class="flex-grow-1">
+                                    <p class="m-0 fw-bold" style="font-size: 14px;">#Apt0001</p>
+                                    <p class="m-0 fw-bold">Adrian Marshall</p>
+                                </div>
+                                <div>
+                                    <p class="m-0">amount</p>
+                                    <p class="m-0">$450</p>
+                                </div>
+                                <div>
+                                    <p class="m-0">amount</p>
+                                    <p class="m-0">$450</p>
+                                </div>
+
+                                <div>
+                                    <i class="fa-solid fa-eye bg-secondary-subtle p-2  rounded-circle "></i>
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="d-flex align-items-center  p-2 rounded " style="gap: 15px;">
+                                <img src="../assets/images/doctor-grid-01.jpg" alt="" style="width: 60px; height: 60px; 
+                                object-fit: cover; border-radius: 8px;">
+
+                                <div class="flex-grow-1">
+                                    <p class="m-0 fw-bold" style="font-size: 14px;">#Apt0001</p>
+                                    <p class="m-0 fw-bold">Adrian Marshall</p>
+                                </div>
+                                <div>
+                                    <p class="m-0">amount</p>
+                                    <p class="m-0">$450</p>
+                                </div>
+                                <div>
+                                    <p class="m-0">amount</p>
+                                    <p class="m-0">$450</p>
+                                </div>
+
+                                <div>
+                                    <i class="fa-solid fa-eye bg-secondary-subtle p-2  rounded-circle "></i>
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="d-flex align-items-center  p-2 rounded " style="gap: 15px;">
+                                <img src="../assets/images/doctor-grid-01.jpg" alt="" style="width: 60px; height: 60px; 
+                                object-fit: cover; border-radius: 8px;">
+
+                                <div class="flex-grow-1">
+                                    <p class="m-0 fw-bold" style="font-size: 14px;">#Apt0001</p>
+                                    <p class="m-0 fw-bold">Adrian Marshall</p>
+                                </div>
+                                <div>
+                                    <p class="m-0">amount</p>
+                                    <p class="m-0">$450</p>
+                                </div>
+                                <div>
+                                    <p class="m-0">amount</p>
+                                    <p class="m-0">$450</p>
+                                </div>
+
+                                <div>
+                                    <i class="fa-solid fa-eye bg-secondary-subtle p-2  rounded-circle "></i>
+
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+            </section>
+
+            <section class="d-flex">
+                <div class="notification border rounded p-3 shadow-box m-2">
+                    <div class="d-flex justify-content-between">
+                        <h5>Recent Patients</h5>
+                        <a href="#">View All</a>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex m-2">
+                            <i class="fa-solid fa-bell rounded p-3 bg-secondary-subtle me-3"></i>
+                            <div>
+                                <p class="m-0 fw-medium ">Booking Confirmed on 21 Mar 2024 10:30 AM</p>
+                                <p class="m-0">Just Now</p>
+
+                            </div>
+
+
+                        </div>
+                        <div class="d-flex m-2">
+                            <i class="fa-solid fa-bell rounded p-3 bg-secondary-subtle me-3"></i>
+                            <div>
+                                <p class="m-0 fw-medium ">Booking Confirmed on 21 Mar 2024 10:30 AM</p>
+                                <p class="m-0">Just Now</p>
+
+                            </div>
+
+
+                        </div>
+                        <div class="d-flex m-2">
+                            <i class="fa-solid fa-bell rounded p-3 bg-secondary-subtle me-3"></i>
+                            <div>
+                                <p class="m-0 fw-medium ">Booking Confirmed on 21 Mar 2024 10:30 AM</p>
+                                <p class="m-0">Just Now</p>
+
+                            </div>
+
+
+                        </div>
+                        <div class="d-flex m-2">
+                            <i class="fa-solid fa-bell rounded p-3 bg-secondary-subtle me-3"></i>
+                            <div>
+                                <p class="m-0 fw-medium ">Booking Confirmed on 21 Mar 2024 10:30 AM</p>
+                                <p class="m-0">Just Now</p>
+
+                            </div>
+
+
+                        </div>
+                        <div class="d-flex m-2">
+                            <i class="fa-solid fa-bell rounded p-3 bg-secondary-subtle me-3"></i>
+                            <div>
+                                <p class="m-0 fw-medium ">Booking Confirmed on 21 Mar 2024 10:30 AM</p>
+                                <p class="m-0">Just Now</p>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="clinics border rounded p-3 shadow-box m-2">
+                    <div class="d-flex justify-content-between">
+                        <h5>Clinics & Availability</h5>
+                    </div>
+                    <hr>
+                    <div class="bg-secondary-subtle rounded">
+
+                        <div class="
+                         p-2 rounded " style="gap: 15px;">
+                            <div class="d-flex align-items-center">
+                                <img src="../assets/images/doctor-thumb-22.jpg" alt=""
+                                 style="width: 60px; height: 60px; 
+                                object-fit: cover; border-radius: 8px; margin-bottom: 2%;
+                                margin-right: 2%;">
+
+                                <div class="flex-grow-1">
+                                    <p class="m-0 fw-bold">Adrian Marshall</p>
+                                </div>
+
+                                <div class="text-end">
+                                    <p class="m-0 fw-semibold "> $900</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-2 rounded d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="m-0  ">Tue :07:00 AM - 09:00 PM</p>
+                                    <p class="m-0  ">Tue :07:00 AM - 09:00 PM</p>
+                                </div>
+                                <a href="#">change</a>
+
+
+                            </div>
+                        </div>
+   <div class="
+                         p-2 rounded " style="gap: 15px;">
+                            <div class="d-flex align-items-center">
+                                <img src="../assets/images/doctor-thumb-22.jpg" alt=""
+                                 style="width: 60px; height: 60px; 
+                                object-fit: cover; border-radius: 8px; margin-bottom: 2%;
+                                margin-right: 2%;">
+
+                                <div class="flex-grow-1">
+                                    <p class="m-0 fw-bold">Adrian Marshall</p>
+                                </div>
+
+                                <div class="text-end">
+                                    <p class="m-0 fw-semibold "> $900</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-2 rounded d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="m-0  ">Tue :07:00 AM - 09:00 PM</p>
+                                    <p class="m-0  ">Tue :07:00 AM - 09:00 PM</p>
+                                </div>
+                                <a href="#">change</a>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </section>
+
+
+
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container py-5 px-2 d-flex align-items-start justify-content-center">
+            <div class="links d-flex align-items-center justify-content-between">
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <h6 class="h5">Company</h6>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Locations</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <h6 class="h5">Treatments</h6>
+                    <ul>
+                        <li><a href="#">Dental</a></li>
+                        <li><a href="#">Cardiac</a></li>
+                        <li><a href="#">Spinal Cord</a></li>
+                        <li><a href="#">Hair Growth</a></li>
+                        <li><a href="#">Anemia</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <h6 class="h5">Specialities</h6>
+                    <ul>
+                        <li><a href="#">Transplant</a></li>
+                        <li><a href="#">Cardiologist</a></li>
+                        <li><a href="#">Oncology</a></li>
+                        <li><a href="#">Pediatrics</a></li>
+                        <li><a href="#">Gynecology</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <h6 class="h5">Utilities</h6>
+                    <ul>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Request a Quote</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+            </div>
+            <div class="send-email  ">
+                <div class="">
+                    <h6 class="h5">Newlsletter</h6>
+                    <ul>
+                        <li>subscribe & stay updated drom the doccure</li>
+                        <li>
+
+                            <div class="search-bar text-start justify-content-start w-100">
+                                <form class="search-box d-flex align-items-center  w-100">
+                                    <div class="search-input d-flex align-items-center flex-grow-1">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <input type="text" placeholder="Search for Medical Procedures, hospitals">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary search-btn ">
+                                        <i class="fa-solid fa-paper-plane m-1"></i>
+                                        send
+                                    </button>
+                                </form>
+
+                            </div>
+                        </li>
+                        <li id="h-contact">contact us</li>
+                        <li class="d-flex">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
+
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-pinterest-p"></i>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer  ">
+            <div class="container d-flex justify-content-between align-items-lg-center">
+                <div class="mb-2 mb-md-0">
+                    <p>Copyright © 2025 Doccure. All Rights Reserved</p>
+                </div>
+                <div class="mb-2 mb-md-0">
+                    <ul class="d-flex">
+                        <li><a href="#">Legal Notice</a></li>
+                        <li><a href="#"> Privacy Policy</a></li>
+                        <li><a href="#"> Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-center">
+                    <img src="../assets/images/card-01.svg" alt="" class="mx-1">
+                    <img src="../assets/images/card-02.svg" alt="" class="mx-1">
+                    <img src="../assets/images/card-03.svg" alt="" class="mx-1">
+                    <img src="../assets/images/card-04.svg" alt="" class="mx-1">
+                    <img src="../assets/images/card-05.svg" alt="" class="mx-1">
+                    <img src="../assets/images/card-06.svg" alt="" class="mx-1">
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/all.min.js"></script>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

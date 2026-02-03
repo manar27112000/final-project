@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Pharmacy Details</title>
+</head>
+
+<body>
+
+    <!-- ----------nav bar----------- -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white  m-auto fixed-top position-relative ">
+        <div class="container  ">
+            <!-- Logo -->
+            <a class="navbar-brand me-5" href="#">
+                <img src="../assets/images/logo.svg" alt="">
+            </a>
+            <!-- ----------------------------- -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- --------------links------------ -->
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+
+                <ul class="navbar-nav align-items-lg-center  justify-content-between">
+                    <li class="nav-item dropdown me-4 position-static">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Home
+                        </a>
+                        <div class="display-with-hover ">
+                            <ul class="dropdown-menu  w-100  ">
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="../assets/images/doctor-grid-01.jpg" class="card-img-top">
+                                            <div class="card-body text-center">
+                                                <a href="#">home 1</a>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="../assets/images/doctor-grid-01.jpg" class="card-img-top">
+                                            <div class="card-body text-center">
+                                                <a href="#">home 1</a>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="../assets/images/doctor-grid-01.jpg" class="card-img-top"
+                                                alt="...">
+                                            <div class="card-body text-center">
+                                                <a href="#">home 1</a>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown me-4 position-static">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Doctors
+                        </a>
+                        <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-4 position-static">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Patients
+                        </a>
+                        <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-4 position-static">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            pharmacy
+                        </a>
+                        <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-4 position-static">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            pages
+                        </a>
+                        <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-4 position-static">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-4 position-static">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Admin
+                        </a>
+                        <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- ------------buttons------------- -->
+                <div class="d-flex gap-2 ms-auto align-items-center">
+                    <a href="#" class="btn btn-primary py-2 d-none d-lg-inline-flex ">
+                        <i class="fa-solid fa-lock"></i> Sign Up
+                    </a>
+                    <a href="#" class="btn btn-outline-dark py-2 d-none d-lg-inline-flex">
+                        <i class="fa-solid fa-user-check"></i> Register
+                    </a>
+                    <i class="fa-solid fa-ellipsis border rounded-circle p-2 ms-2 d-lg-none"></i>
+                </div>
+
+
+            </div>
+
+            <i class="fa-solid fa-ellipsis  border rounded-circle  p-2  ms-2 d-none d-lg-block"></i>
+
+
+        </div>
+    </nav>
+    <!-- --------------------blog Details---------------------------------------------------------------- -->
+    <section class="page-title text-center py-3 ">
+        <div class="container">
+            <p class="fw-medium">
+                <i class="fa-solid fa-house-chimney-window text-primary"></i> <i class="fa-solid fa-chevron-right"></i>
+                Blogs
+                <i class="fa-solid fa-chevron-right"></i> Blog Details
+            </p>
+            <h2 class="fw-bold mt-2">Blog Details</h2>
+        </div>
+    </section>
+
+    <!-- ............ -->
+    <section class="container d-flex justify-content-center align-items-start">
+        <div class="tips mt-4">
+            <h4>10 Tips for Maintaining a Healthy Lifestyle Year-Round</h4>
+            <div class="border text-light-emphasis rounded p-3 m-4">
+                <div id="zoomBOut">
+                    <div id="zoomBIn"></div>
+                </div>
+
+                <div class="d-flex align-items-lg-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <span class="text-white bg-black  m-3 py-2 px-3 rounded-pill small">Health Tips</span>
+                        <div class="d-flex align-items-center text-muted">
+
+                            <small>| <i class="fa-regular fa-calendar me-1"></i>
+                                4 Dec 2023</small>
+                        </div>
+                        <div class="d-flex align-items-center text-muted ms-3">
+                            <small>|
+                                <img src="../assets/images/doctor-thumb-23.jpg" alt="" class="rounded-circle me-1"
+                                    id="img-size">
+                                Dr. Darren Elder</small>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <div
+                            class="d-flex align-items-center me-2 text-black border-black border rounded-pill px-2 py-1">
+                            <i class="fa-regular fa-comment me-1"></i>
+                            <small>25</small>
+                        </div>
+                        <div
+                            class="d-flex align-items-center text-primary border border-primary rounded-pill px-2 py-1">
+                            <i class="fa-regular fa-eye"></i> <small>25</small>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="p-color">
+                    Maintaining a healthy lifestyle year-round is achievable with consistent habits that support your
+                    physical and mental well-being. One of the key pillars is staying hydrated, as water is essential
+                    for digestion, nutrient absorption, and overall bodily functions. Aim to drink at least eight
+                    glasses of water daily, adjusting for factors like weather and physical activity. A balanced diet is
+                    equally important, as it fuels your body with the nutrients it needs for energy, growth, and repair.
+                    Incorporate a variety of fruits, vegetables, lean proteins, and whole grains to ensure you’re
+                    getting a range of vitamins and minerals.
+                </p>
+
+                <p class="p-color">
+                    Regular physical activity is another cornerstone of a healthy lifestyle. Engaging in at least 150
+                    minutes of moderate exercise per week, such as walking or cycling, can boost your cardiovascular
+                    health, strengthen muscles, and improve mood. Equally important is prioritizing sleep. Getting 7-9
+                    hours of quality sleep each night helps regulate your mood, enhances mental clarity, and supports
+                    physical health. With these tips in mind, you’ll be on your way to maintaining a healthy lifestyle
+                    all year long.
+                </p>
+
+
+                <div class="blog-text my-4">
+                    <p>
+                        An extra important note to remember is that consistency is key.
+                        Small, sustainable changes in your daily habits will have a more
+                        lasting impact than short-term, extreme efforts.
+                    </p>
+                </div>
+            </div>
+            <div id="about-author ">
+                <h6>About Author</h6>
+                <div class="d-flex align-items-start gap-3 mb-4 author-box">
+
+                    <img src="../assets/images/doctor-grid-01.jpg" class="rounded author-img" alt="Author">
+
+                    <p class="mb-0">
+                        As a certified nutritionist and wellness coach, I’m passionate about helping others
+                        achieve a balanced lifestyle and lasting health. My journey into health started with
+                        my own desire to feel better physically and mentally, and along the way, I’ve learned
+                        the importance of consistency and small, sustainable changes. I love exploring new
+                        ways to stay active, experimenting with healthy meals, and sharing tips that are
+                        practical and realistic for people with busy lives.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="mb-4">
+                <div class="blog-tags mt-4">
+                    <h6 class="mb-3">Tags</h6>
+                    <div class="d-flex flex-wrap gap-2 ">
+                        <button type="button" class="btn btn-dark rounded-pill fs-6 text">Health Tips</button>
+                        <button type="button" class="btn btn-dark rounded-pill fs-6 text">Awareness</button>
+                        <button type="button" class="btn btn-dark rounded-pill fs-6 text">Health</button>
+                        <button type="button" class="btn btn-dark rounded-pill fs-6 text">Wellness</button>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="side-bar ">
+
+            <div class="search-blog border text-muted rounded mb-4">
+                <div class="d-flex border text-muted rounded p-2 m-3 align-items-center">
+                    <input class="w-100  border-0" type="text" placeholder="search...">
+                    <i class="fa-solid fa-magnifying-glass border-none  bg-primary rounded text-white p-2"></i>
+                </div>
+
+
+            </div>
+
+            <div class="categories border text-black rounded mb-3 p-2">
+                <h5>categories</h5>
+                <div class="">
+                    <div class="d-flex justify-content-between text-muted px-2">
+                        <p class="hover-color">Health Care</p>
+                        <p>(2)</p>
+                    </div>
+                    <div class="d-flex justify-content-between text-muted px-2">
+                        <p class="hover-color">Nutritions</p>
+                        <p>(4)</p>
+                    </div>
+                    <div class="d-flex justify-content-between text-muted px-2">
+                        <p class="hover-color">Health Tips</p>
+                        <p>(5)</p>
+                    </div>
+                    <div class="d-flex justify-content-between text-muted px-2">
+                        <p class="hover-color">Medical Research</p>
+                        <p>(4)</p>
+                    </div>
+                    <div class="d-flex justify-content-between text-muted px-2">
+                        <p class="hover-color">Health Treatment</p>
+                        <p>(6)</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="categories border text-black rounded mb-3 p-2">
+                <h5>Latest News</h5>
+                <div class="mb-3">
+                    <div class="d-flex  text-muted px-2">
+                        <div id="zoomBOut-side" class="me-2">
+                            <div id="zoomBIn-side"></div>
+                        </div>
+
+                        <div>
+                            <span>06 Nov 2024</span>
+                            <p class="h6 text-black hover-color two-lines ">Managing Chronic Conditions: Expert Advice
+                                for Better Living</p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex  text-muted px-2">
+                        <div id="zoomBOut-side" class="me-2">
+                            <div id="zoomBIn-side"></div>
+                        </div>
+
+                        <div>
+                            <span>06 Nov 2024</span>
+                            <p class="h6 text-black hover-color two-lines ">Managing Chronic Conditions: Expert Advice
+                                for Better Living</p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex  text-muted px-2">
+                        <div id="zoomBOut-side" class="me-2">
+                            <div id="zoomBIn-side"></div>
+                        </div>
+
+                        <div>
+                            <span>06 Nov 2024</span>
+                            <p class="h6 text-black two-lineshover-color   ">Managing Chronic Conditions: Expert Advice
+                                for Better Living</p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="mb-3">
+                    <div class="d-flex  text-muted px-2">
+                        <div id="zoomBOut-side" class="me-2">
+                            <div id="zoomBIn-side"></div>
+                        </div>
+
+                        <div>
+                            <span>06 Nov 2024</span>
+                            <p class="h6 text-black  two-lines hover-color ">Managing Chronic Conditions: Expert Advice
+                                for Better Living</p>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <div>
+                <h5>Tags</h5>
+                <div class="d-flex flex-wrap  " id="btnblog">
+                    <p class="text-black bg-body-secondary rounded-pill px-2  mx-1">health tips</p>
+                    <p class="text-black bg-body-secondary rounded-pill px-2 mx-1">health tips</p>
+                    <p class="text-black bg-body-secondary rounded-pill px-2 mx-1">health tips</p>
+                    <p class="text-black bg-body-secondary rounded-pill px-2  mx-1">health tips</p>
+                    <p class="text-black bg-body-secondary rounded-pill px-2  mx-1">health tips</p>
+                    <p class="text-black bg-body-secondary rounded-pill px-2 mx-1">health tips</p>
+                    <p class="text-black bg-body-secondary rounded-pill px-2 mx-1">health tips</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container py-5 px-2 d-flex align-items-start justify-content-center">
+            <div class="links d-flex align-items-center justify-content-between">
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <h6 class="h5">Company</h6>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Locations</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <h6 class="h5">Treatments</h6>
+                    <ul>
+                        <li><a href="#">Dental</a></li>
+                        <li><a href="#">Cardiac</a></li>
+                        <li><a href="#">Spinal Cord</a></li>
+                        <li><a href="#">Hair Growth</a></li>
+                        <li><a href="#">Anemia</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <h6 class="h5">Specialities</h6>
+                    <ul>
+                        <li><a href="#">Transplant</a></li>
+                        <li><a href="#">Cardiologist</a></li>
+                        <li><a href="#">Oncology</a></li>
+                        <li><a href="#">Pediatrics</a></li>
+                        <li><a href="#">Gynecology</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <h6 class="h5">Utilities</h6>
+                    <ul>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Request a Quote</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+            </div>
+            <div class="send-email  ">
+                <div class="">
+                    <h6 class="h5">Newlsletter</h6>
+                    <ul>
+                        <li>subscribe & stay updated drom the doccure</li>
+                        <li>
+
+                            <div class="search-bar text-start justify-content-start w-100">
+                                <form class="search-box d-flex align-items-center  w-100">
+                                    <div class="search-input d-flex align-items-center flex-grow-1">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <input type="text" placeholder="Search for Medical Procedures, hospitals">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary search-btn ">
+                                        <i class="fa-solid fa-paper-plane m-1"></i>
+                                        send
+                                    </button>
+                                </form>
+
+                            </div>
+                        </li>
+                        <li id="h-contact">contact us</li>
+                        <li class="d-flex">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
+
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-pinterest-p"></i>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer  ">
+            <div class="container d-flex justify-content-between align-items-lg-center">
+                <div class="mb-2 mb-md-0">
+                    <p>Copyright © 2025 Doccure. All Rights Reserved</p>
+                </div>
+                <div class="mb-2 mb-md-0">
+                    <ul class="d-flex">
+                        <li><a href="#">Legal Notice</a></li>
+                        <li><a href="#"> Privacy Policy</a></li>
+                        <li><a href="#"> Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-center">
+                    <img src="../assets/images/card-01.svg" alt="" class="mx-1">
+                    <img src="../assets/images/card-02.svg" alt="" class="mx-1">
+                    <img src="../assets/images/card-03.svg" alt="" class="mx-1">
+                    <img src="../assets/images/card-04.svg" alt="" class="mx-1">
+                    <img src="../assets/images/card-05.svg" alt="" class="mx-1">
+                    <img src="../assets/images/card-06.svg" alt="" class="mx-1">
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/all.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
