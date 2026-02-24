@@ -1,10 +1,6 @@
 
 # 🌐 Final Project – Doccure Healthcare Template  
 
-![Project Status](https://img.shields.io/badge/Status-Completed-success)  
-![Technology](https://img.shields.io/badge/Technology-HTML%20%7C%20CSS%20%7C%20JavaScript-blue)  
-![License](https://img.shields.io/badge/License-MIT-green)
-
 🚀 A responsive front-end healthcare and pharmacy website developed as a final project.
 
 This project represents a structured template for a healthcare system that includes home page, pharmacy listing, pharmacy details, and contact form.
@@ -63,30 +59,3 @@ final-project/
 git clone https://github.com/manar27112000/final-project.git
 ```
 
-2. Open the project folder  
-3. Double click `index.html`  
-4. Open it in your browser  
-
-🎉 The project will run without any server required.
-
----
-
-## 🔮 Future Improvements  
-
-✨ Add Authentication (Login / Register)  
-✨ Connect to a Backend + Database  
-✨ Add Booking System for Pharmacies  
-✨ Add API Integration for Dynamic Data  
-✨ Convert Project to React / Vue Framework  
-
----
-
-## 👩‍💻 Developed By  
-
-Project developed as a final project to demonstrate frontend development skills and structured project architecture.
-
----
-
-## 📜 License  
-
-This project is open-source and available under the MIT License.
